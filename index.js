@@ -11,8 +11,6 @@ const io = new Server(server,{
     cors: {
         origin: "*", // change to frontend domain in production
     },
-    pingTimeout: 60000,
-    pingInterval: 25000
 });
 
 const clients = {}; // store socket objects by ID
